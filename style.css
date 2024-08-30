@@ -1,0 +1,182 @@
+/* Global reset */
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+    background: linear-gradient(#d2b62a, #dbb618 45%, #fff 45%, #fff 100%);
+}
+
+/* Profile Card styles */
+.card {
+    position: relative;
+    width: 300px;
+    border-radius: 10px;
+    height: 400px;
+    background: linear-gradient(rgba(254, 255, 255, 0.968), );
+    box-shadow: 20px 25px rgba(117, 113, 103, 0.135);
+    border-top: 1px solid rgb(224, 230, 224);
+    backdrop-filter: blur(15px);
+}
+
+/* Profile Image styles */
+.img-bx {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0;
+    height: 100%;
+    transform: translateY(30px) scale(0.5);
+    border-radius: 10px;
+    overflow: hidden;
+    transform-origin: top;
+}
+
+.img-bx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Profile Content styles */
+.content {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 30px;
+}
+
+.content .detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.content .detail h2 {
+    color: #444;
+    font-size: 1.6em;
+    font-weight: bolder;
+}
+
+.content .detail h2 span {
+    font-size: 8.7em;
+    color: #dfb785;
+    font-weight: bold;
+}
+
+/* Social Media Icons styles */
+.sci {
+    position: relative;
+    display: flex;
+    margin-top: 5px;
+}
+
+.sci li {
+    list-style: none;
+    margin: 4px;
+}
+
+.sci li a {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: transparent;
+    font-size: 1.5em;
+    color: #444;
+    text-decoration: none;
+    box-shadow: 7px 5px 5px rgba(8, 8, 8, 8.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    transition: 0.5s;
+}
+
+.sci li a:hover {
+    background: #e02c2c;
+    color: #fff;
+}
+#colorMixText{
+
+    color: linear-gradient(5deg,rgb(46, 255, 175), rgba(255, 217, 0, 0.833));
+}
+
+
+
+/* body {
+    font-family: Arial, sans-serif;
+  }
+  .hidden {
+    opacity: 0;
+    /* transition: opacity 1s ease; /* Transition property for opacity with a duration of 1 second */
+  /* }
+  
+  .visible {
+  opacity:1;
+  }
+  .color1 {
+    color: blue;
+  }
+  
+  .color2 {
+    color: rgb(225, 71, 29);
+  } */
+  /* .color3 {
+    color: rgb(10, 225, 78);
+  }
+  .color4 {
+    color: rgb(226, 13, 194);
+  }
+  .color5 {
+    color: rgb(206, 220, 8);
+  }
+  .color6 {
+    color: rgb(23, 236, 222);
+  } */
+  /* .color7 {
+    color: rgb(230, 15, 187);
+  }
+   */ 
+
+
+h1{
+    background: linear-gradient(100deg, red, green, yellow, blue, violet, gray, aqua, olive, teal, silver, fuchsia, navy, maroon, lime, black);
+    background-size: 500%;
+    font-weight: 600;word-spacing: 5px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animate 30s linear infinite;
+
+}
+
+@keyframes animate {
+    0%{
+        background-position: 500%;
+    }
+    100%{
+        background-position: 0%;
+    }
+}
